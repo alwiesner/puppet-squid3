@@ -25,8 +25,8 @@ acl Safe_ports port <%= line %>
 acl CONNECT method CONNECT
 
 # predefined http_accesses
-http_access allow manager localhost
-http_access deny manager
+#http_access allow manager localhost
+#http_access deny manager
 http_access deny !Safe_ports
 http_access deny CONNECT !SSL_ports
 
